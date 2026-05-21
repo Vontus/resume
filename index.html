@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Alberto Martínez Berná — Resume</title>
+<meta name="description" content="Alberto Martínez Berná — Senior Frontend / Full Stack Engineer with 8 years of experience in React, TypeScript and frontend architecture. Interactive online resume." />
+<meta name="author" content="Alberto Martínez Berná" />
+<meta name="theme-color" content="#1B3A5C" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Alberto Martínez Berná — Senior Frontend Engineer" />
+<meta property="og:description" content="Senior Frontend / Full Stack Engineer with 8 years of experience building complex web applications and SaaS platforms." />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Alberto Martínez Berná — Senior Frontend Engineer" />
+<meta name="twitter:description" content="Senior Frontend / Full Stack Engineer with 8 years of experience building complex web applications and SaaS platforms." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='13'%20fill='%231B3A5C'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Arial,sans-serif'%20font-size='40'%20font-weight='bold'%20fill='white'%20text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+<style>
+  :root {
+    --name: #0F1115;
+    --text: #2A2F36;
+    --muted: #5F656E;
+    --accent: #1B3A5C;
+    --rule: #E6E8EB;
+    --bg: #EEF0F3;
+    --card: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 24px 16px 64px;
+  }
+
+  /* ---- toolbar ---- */
+  .toolbar {
+    max-width: 910px;
+    margin: 0 auto 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  .toolbar .field {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  select, .btn {
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--text);
+    background: var(--card);
+    border: 1px solid #D4D8DD;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+  select:hover, .btn:hover { border-color: var(--accent); }
+  .btn { color: var(--accent); font-weight: 600; }
+
+  /* keyboard focus visibility */
+  select:focus-visible,
+  .btn:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  /* ---- cv card ---- */
+  .cv {
+    max-width: 910px;
+    margin: 0 auto;
+    background: var(--card);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 10px 34px rgba(0,0,0,.07);
+    display: grid;
+    grid-template-columns: 296px 1fr;
+    overflow: hidden;
+    transition: opacity .16s ease;
+  }
+
+  .sidebar { padding: 42px 28px; }
+  .main    { padding: 42px 34px; border-left: 1px solid var(--rule); }
+
+  /* ---- header (sidebar) ---- */
+  .name {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--name);
+    line-height: 1.15;
+    letter-spacing: -.2px;
+  }
+  .role-head {
+    font-size: 14px;
+    color: var(--accent);
+    margin-top: 8px;
+  }
+
+  /* ---- section titles ---- */
+  .side-section { margin-top: 24px; }
+  .side-head {
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 11px;
+  }
+  .side-head h2 {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px;
+    margin-bottom: -1px;
+  }
+
+  .main-head { border-bottom: 2px solid var(--accent); margin-bottom: 20px; }
+  .main-head h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--name);
+    padding-bottom: 6px;
+  }
+
+  /* ---- sidebar content ---- */
+  .profile { font-size: 12.8px; color: var(--text); }
+
+  .contact-list { list-style: none; font-size: 12.8px; }
+  .contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .contact-list .ic {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    fill: var(--accent);
+  }
+  .contact-list a, .contact-list span { word-break: break-word; }
+  .contact-list a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .contact-list a:hover { color: var(--accent); }
+
+  .lang-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .lang-row .lvl { color: var(--muted); }
+
+  .edu-title { font-size: 13px; font-weight: 700; color: var(--name); }
+  .edu-school { font-size: 12.5px; font-style: italic; margin-top: 2px; }
+  .edu-dates { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  /* ---- experience ---- */
+  .role { }
+  .role + .role {
+    border-top: 1px solid var(--rule);
+    margin-top: 7px;
+    padding-top: 18px;
+  }
+  .role-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+  }
+  .role-title { font-size: 15px; font-weight: 700; color: var(--name); }
+  .role-dates { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .role-company {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+  .role-project { font-size: 13.2px; margin-top: 8px; }
+
+  .bullets { list-style: none; margin-top: 9px; }
+  .bullets li {
+    position: relative;
+    padding-left: 16px;
+    font-size: 13.2px;
+    margin-bottom: 7px;
+  }
+  .bullets li:last-child { margin-bottom: 0; }
+  .bullets li::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 7.5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .meta { font-size: 12.4px; margin-top: 8px; }
+  .meta .label {
+    color: var(--accent);
+    font-weight: 700;
+    margin-right: 5px;
+  }
+
+  /* ---- responsive ---- */
+  @media (max-width: 680px) {
+    body { padding: 16px 10px 40px; }
+    .cv { grid-template-columns: 1fr; }
+    .main { border-left: none; border-top: 1px solid var(--rule); }
+    .sidebar, .main { padding: 30px 22px; }
+    .toolbar { justify-content: space-between; }
+  }
+
+  /* ---- print ---- */
+  @media print {
+    body { background: #fff; padding: 0; }
+    .toolbar { display: none; }
+    .cv {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: none;
+      margin: 0;
+    }
+    @page { margin: 12mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <label class="field">
+    <span id="langLabel">Language</span>
+    <select id="langSelect">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+    </select>
+  </label>
+  <a class="btn" id="downloadBtn" href="pdf/AlbertoMartinezBerna_Resume_EN.pdf" download>Download PDF</a>
+</div>
+
+<div class="cv" id="cv"></div>
+
+<script src="data.js"></script>
+<script>
+
+  const escapeHtml = (s) => s.replace(/[&<>"']/g, (ch) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[ch]));
+
+  // Inline SVG icons (self-contained — no external requests).
+  const ICONS = {
+    phone: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>',
+    email: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
+    location: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>',
+    github: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>',
+    linkedin: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>'
+  };
+
+  function roleHtml(r, d) {
+    const bullets = r.bullets && r.bullets.length
+      ? `<ul class="bullets">${r.bullets.map(b => `<li>${escapeHtml(b)}</li>`).join("")}</ul>`
+      : "";
+    const stack = r.stack
+      ? `<div class="meta"><span class="label">${escapeHtml(d.stackLabel)}</span>${escapeHtml(r.stack)}</div>`
+      : "";
+    const integrations = r.integrations
+      ? `<div class="meta"><span class="label">${escapeHtml(d.integrationsLabel)}</span>${escapeHtml(r.integrations)}</div>`
+      : "";
+    return `
+      <div class="role">
+        <div class="role-top">
+          <span class="role-title">${escapeHtml(r.title)}</span>
+          <span class="role-dates">${escapeHtml(r.dates)}</span>
+        </div>
+        <div class="role-company">${escapeHtml(r.company)}</div>
+        <p class="role-project">${escapeHtml(r.project)}</p>
+        ${bullets}
+        ${stack}
+        ${integrations}
+      </div>`;
+  }
+
+  function render(lang) {
+    const d = DATA[lang];
+    document.documentElement.lang = lang;
+    document.title = d.name + " — " + (lang === "es" ? "Currículum" : "Resume");
+    document.getElementById("langLabel").textContent = d.ui.language;
+    const dlBtn = document.getElementById("downloadBtn");
+    dlBtn.textContent = d.ui.download;
+    dlBtn.href = lang === "es"
+      ? "pdf/AlbertoMartinezBerna_Resume_ES.pdf"
+      : "pdf/AlbertoMartinezBerna_Resume_EN.pdf";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", d.name + " — " + d.role + ". " + d.profile);
+
+    const sidebar = `
+      <aside class="sidebar">
+        <h1 class="name">${escapeHtml(d.name)}</h1>
+        <p class="role-head">${escapeHtml(d.role)}</p>
+
+        <div class="side-section">
+          <div class="side-head"><h2>${escapeHtml(d.sections.contact)}</h2></div>
+          <ul class="contact-list">
+            ${d.contact.phone ? `<li>${ICONS.phone}<a href="tel:${d.contact.phone.replace(/\s/g, "")}">${escapeHtml(d.contact.phone)}</a></li>` : ""}
+            <li>${ICONS.email}<a href="mailto:${escapeHtml(d.contact.email)}">${escapeHtml(d.contact.email)}</a></li>
+            <li>${ICONS.location}<span>${escapeHtml(d.contact.location)}</span></li>
+            <li>${ICONS.github}<a href="${escapeHtml(d.contact.github.url)}" target="_blank" rel="noopener">${escapeHtml(d.contact.github.label)}</a></li>
+            <li>${ICONS.linkedin}<a href="${escapeHtml(d.contact.linkedin.url)}" target="_blank" rel="noopener">${escapeHtml(d.contact.linkedin.label)}</a></li>
+          </ul>
+        </div>
+
+        <div class="side-section">
+          <div class="side-head"><h2>${escapeHtml(d.sections.profile)}</h2></div>
+          <p class="profile">${escapeHtml(d.profile)}</p>
+        </div>
+
+        <div class="side-section">
+          <div class="side-head"><h2>${escapeHtml(d.sections.languages)}</h2></div>
+          ${d.languages.map(l => `
+            <div class="lang-row">
+              <span>${escapeHtml(l.name)}</span>
+              <span class="lvl">${escapeHtml(l.level)}</span>
+            </div>`).join("")}
+        </div>
+
+        <div class="side-section">
+          <div class="side-head"><h2>${escapeHtml(d.sections.education)}</h2></div>
+          <div class="edu-title">${escapeHtml(d.education.title)}</div>
+          <div class="edu-school">${escapeHtml(d.education.school)}</div>
+          <div class="edu-dates">${escapeHtml(d.education.dates)}</div>
+        </div>
+      </aside>`;
+
+    const main = `
+      <main class="main">
+        <div class="main-head"><h2>${escapeHtml(d.sections.experience)}</h2></div>
+        ${d.experience.map(r => roleHtml(r, d)).join("")}
+      </main>`;
+
+    document.getElementById("cv").innerHTML = sidebar + main;
+  }
+
+  const select = document.getElementById("langSelect");
+  const cv = document.getElementById("cv");
+  const STORAGE_KEY = "cv-lang";
+
+  function isLang(v) { return v === "en" || v === "es"; }
+
+  // Resolve initial language: URL ?lang= > saved choice > browser language.
+  function resolveInitialLang() {
+    const urlLang = new URLSearchParams(window.location.search).get("lang");
+    if (isLang(urlLang)) return urlLang;
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (isLang(saved)) return saved;
+    } catch (e) { /* localStorage may be blocked on file:// */ }
+    return (navigator.language || "en").toLowerCase().startsWith("es") ? "es" : "en";
+  }
+
+  // Persist choice both in the URL (shareable) and localStorage (sticky).
+  function persistLang(lang) {
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", lang);
+    history.replaceState(null, "", url);
+  }
+
+  // Switch with a short cross-fade.
+  function switchLang(lang) {
+    cv.style.opacity = "0";
+    setTimeout(() => {
+      render(lang);
+      cv.style.opacity = "1";
+    }, 160);
+  }
+
+  const initial = resolveInitialLang();
+  select.value = initial;
+  render(initial);
+
+  select.addEventListener("change", (e) => {
+    const lang = e.target.value;
+    persistLang(lang);
+    switchLang(lang);
+  });
+</script>
+
+</body>
+</html>
