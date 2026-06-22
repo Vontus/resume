@@ -37,13 +37,14 @@ const DATA = {
         title: "Senior Frontend Engineer",
         company: "Quadrant Travel Technologies",
         dates: "Jun 2023 — Present",
-        project: "Customer-facing SaaS for travel agents and tour operators, focused on trip-documentation and booking flows.",
+        project: "Customer-facing SaaS for travel agents and tour operators, focused on trip documentation and booking flows.",
         bullets: [
-          "Took ownership of the trip-documentation frontend in March 2026 as sole developer — drove a 2-month modernization using AI-assisted workflows, sustaining feature delivery throughout and shipping without major regressions.",
-          "Introduced visual regression testing from scratch (44 Playwright/Storybook specs in Docker) and a per-file coverage ratchet enforced in CI; grew unit tests from 9 Jest specs to 115 Vitest specs / 842 tests, reaching 88.9% line / 90.4% branch coverage.",
-          "Led the modernization of the service-rendering layer (8 service-card components rewritten as pure components over a normalized domain shape, removing two React contexts and the Ant Design / internal design-system dependency); authored 21 internal documents including a rewrite-vs-refactor analysis that aligned engineering and product on incremental modernization over a rebuild."
+          "Started on the backoffice side before taking sole ownership of the trip documentation frontend — combined ongoing refactoring, maintenance, and feature delivery with a modernization driven by AI-assisted workflows, with no significant regressions.",
+          "Pulled the normalization logic out of the views into a dedicated domain layer — consolidating two inconsistent APIs and flattening 18 service variants into a single ViewModel.",
+          "Introduced visual regression testing from scratch (44 Playwright/Storybook specs in Docker); grew unit tests from 9 Jest specs to 115 Vitest specs / 842 tests, reaching 88.9% line / 90.4% branch coverage.",
+          "Wrote 23 internal documents — conventions, data contracts, and refactoring protocols — that serve as the repo's living documentation and permanent grounding for AI-assisted work, through the modernization and beyond."
         ],
-        stack: "React · Next.js · TypeScript · Tailwind · Storybook · Jest/Vitest · Testing Library · Playwright",
+        stack: "React · Next.js · TypeScript · Tailwind · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
         integrations: "Smartvel · Google Maps · Notion API · GrowthBook · Sentry"
       },
       {
@@ -117,13 +118,14 @@ const DATA = {
         title: "Desarrollador Frontend Senior",
         company: "Quadrant Travel Technologies",
         dates: "Jun 2023 — Actualidad",
-        project: "SaaS para agentes de viajes y tour operadores, enfocado en documentación de viajes y flujos de reserva.",
+        project: "SaaS para agentes de viajes y tour operadores, enfocado en documentación digital de los servicios contratados y flujos de reserva.",
         bullets: [
-          "Asumí el ownership del frontend de trip-documentation en marzo de 2026 como único desarrollador — modernización de 2 meses con flujos asistidos por IA, manteniendo la entrega de features y sin regresiones graves.",
-          "Introduje testing de regresión visual desde cero (44 specs Playwright/Storybook en Docker) y un coverage ratchet por fichero en CI; los tests unitarios pasaron de 9 specs Jest a 115 Vitest / 842 tests, con 88,9% de líneas y 90,4% de ramas.",
-          "Lideré la modernización de la capa de renderizado de servicios (8 service-cards reescritos como componentes puros sobre una shape de dominio normalizada, eliminando dos React contexts y la dependencia de Ant Design / design system interno); redacté 21 documentos internos incluyendo un análisis técnico-ejecutivo 'reescritura vs refactor' que alineó a ingeniería y producto hacia una modernización incremental en lugar de una reconstrucción."
+          "Trabajé en el backoffice antes de hacerme cargo en solitario del frontend de documentación digital — he combinado refactorización, mantenimiento y entrega continua de features con una modernización apoyada en IA, sin regresiones relevantes.",
+          "Extraje la lógica de normalización dispersa en las vistas a una capa de dominio centralizada — unificando dos APIs inconsistentes y aplanando 18 variantes de servicio en un único ViewModel.",
+          "Introduje testing de regresión visual desde cero (44 specs Playwright/Storybook en Docker); los tests unitarios pasaron de 9 specs Jest a 115 Vitest / 842 tests, con 88,9% de líneas y 90,4% de ramas.",
+          "Redacté 23 documentos internos — convenciones, contratos de datos y protocolos de refactor — que sirven como documentación viva del repo y contexto permanente para trabajo asistido por IA, tanto durante la modernización como en el desarrollo continuo."
         ],
-        stack: "React · Next.js · TypeScript · Tailwind · Storybook · Jest/Vitest · Testing Library · Playwright",
+        stack: "React · Next.js · TypeScript · Tailwind · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
         integrations: "Smartvel · Google Maps · Notion API · GrowthBook · Sentry"
       },
       {
