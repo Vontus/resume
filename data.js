@@ -65,7 +65,7 @@ const DATA = {
           "Designed an offline-first architecture (Dexie + deferred sync) and a Redis-backed real-time collaboration layer that scales across backend instances — a direct response to intermittent connectivity inside nuclear plants.",
           "Built a Microsoft Word plugin that exports inspector templates to HTML with embedded inputs, bridging the client's existing authoring workflow with a digital pipeline feeding tablet form-filling and downstream analytics."
         ],
-        stack: "Node.js · Next.js · TypeScript · React · Redux · Figma · MongoDB · MSSQL",
+        stack: "Node.js · Next.js · TypeScript · React · Redux · Webpack · Figma · MongoDB · MSSQL",
         integrations: ""
       },
       {
@@ -141,12 +141,12 @@ const DATA = {
         title: "Desarrollador Full Stack",
         company: "Interacso · PROCEED para Tecnatom",
         dates: "Mar 2020 — Nov 2022 · Remoto",
-        project: "Plataforma mission-critical de digitalización que sustituye las rondas de inspección en papel en centrales nucleares por formularios interactivos en tablet. Tech lead de un equipo de tres.",
+        project: "Plataforma crítica de digitalización que sustituye las rondas de inspección en papel en centrales nucleares por formularios interactivos en tablet. Tech lead de un equipo de tres.",
         bullets: [
           "Diseñé una arquitectura offline-first (Dexie + sincronización diferida) y una capa de colaboración en tiempo real con Redis que escala entre instancias del backend — respuesta a la conectividad intermitente en centrales nucleares.",
           "Desarrollé un plugin de Microsoft Word que exporta plantillas de inspectores a HTML con inputs embebidos, conectando el flujo de autoría del cliente con un pipeline digital que alimenta el rellenado en tablet y la analítica posterior."
         ],
-        stack: "Node.js · Next.js · TypeScript · React · Redux · Figma · MongoDB · MSSQL",
+        stack: "Node.js · Next.js · TypeScript · React · Redux · Webpack · Figma · MongoDB · MSSQL",
         integrations: ""
       },
       {
