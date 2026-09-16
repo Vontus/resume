@@ -61,7 +61,7 @@ const EXPERIENCE = {
         {
           text: "Pivoted the platform's data layer from NoSQL to a relational schema (MSSQL) early in the project and designed it from scratch — driven by the client's need for the stronger data guarantees a relational model gives safety-critical inspection records.",
           tags: ["database", "schema-design", "relational", "mssql"],
-          confirmed: "2026-09-14 — verified with Alberto — no data migration happened (schema designed before real data existed), client wanted MSSQL specifically for data guarantees, Alberto designed the schema himself."
+          confirmed: "2026-09-14 — schema designed from scratch before any live data existed (not a data migration); MSSQL was the client's specific requirement for stronger data guarantees; Alberto designed it solo."
         },
         {
           text: "Designed an offline-first architecture (Dexie + deferred sync) and a Redis-backed real-time collaboration layer that scales across backend instances — a direct response to intermittent connectivity inside nuclear plants.",
@@ -85,7 +85,7 @@ const EXPERIENCE = {
         {
           text: "Designed the PostgreSQL schema and wrote versioned, rollback-capable migrations for a new NestJS/TypeORM/GraphQL service, evolving it against live production data; chose TypeORM for its native TypeScript integration.",
           tags: ["database", "schema-design", "migrations", "postgresql", "typeorm", "nestjs", "graphql"],
-          confirmed: "2026-09-14 — verified with Alberto — this was LynxView, not Interacso (initially misremembered). New project built with TypeORM from the start (no migration from Sequelize — Sequelize was used elsewhere/earlier, unrelated to this bullet). Alberto personally designed the schema and wrote/ran the migrations, including the rollback-capable up/down migrations TypeORM provides, against live production data. Chose TypeORM over Sequelize for its GraphQL/TypeScript fit."
+          confirmed: "2026-09-14 — new service built with TypeORM from day one; Alberto personally designed the schema and wrote/ran the versioned, rollback-capable migrations against live production data; chose TypeORM over Sequelize for its TypeScript/GraphQL fit."
         }
       ],
       stack: ["Node.js", "TypeScript", "NestJS", "TypeORM", "GraphQL", "Vue", "PostgreSQL"],
@@ -141,7 +141,7 @@ const EXPERIENCE = {
         {
           text: "Pivoté la capa de datos de la plataforma, de NoSQL a un esquema relacional (MSSQL), al inicio del proyecto, y lo diseñé desde cero — por la necesidad del cliente de las garantías de datos más sólidas que ofrece un modelo relacional para registros de inspección críticos para la seguridad.",
           tags: ["database", "schema-design", "relational", "mssql"],
-          confirmed: "2026-09-14 — verificado con Alberto — no hubo migración de datos (esquema diseñado antes de que hubiera datos reales), el cliente quería MSSQL específicamente por las garantías de datos, Alberto diseñó el esquema él mismo."
+          confirmed: "2026-09-14 — esquema diseñado desde cero antes de que existieran datos reales (no hubo migración de datos); MSSQL fue petición explícita del cliente por mayores garantías de datos; lo diseñó Alberto en solitario."
         },
         {
           text: "Diseñé una arquitectura offline-first (Dexie + sincronización diferida) y una capa de colaboración en tiempo real con Redis que escala entre instancias del backend — respuesta a la conectividad intermitente en centrales nucleares.",
@@ -165,7 +165,7 @@ const EXPERIENCE = {
         {
           text: "Diseñé el esquema de PostgreSQL y escribí las migraciones versionadas, con soporte de rollback, de un nuevo servicio NestJS/TypeORM/GraphQL, evolucionándolo sobre datos ya en producción; elegí TypeORM por su integración nativa con TypeScript.",
           tags: ["database", "schema-design", "migrations", "postgresql", "typeorm", "nestjs", "graphql"],
-          confirmed: "2026-09-14 — verificado con Alberto — fue en LynxView, no en Interacso (lo recordaba mal al principio). Proyecto nuevo construido con TypeORM desde el inicio (no hubo migración desde Sequelize — Sequelize se usó en otro sitio/momento, sin relación con este bullet). Alberto diseñó el esquema y escribió/ejecutó él mismo las migraciones, incluyendo las migraciones up/down con rollback que ofrece TypeORM, sobre datos ya en producción. Eligió TypeORM sobre Sequelize por su encaje con GraphQL/TypeScript."
+          confirmed: "2026-09-14 — servicio nuevo construido con TypeORM desde el principio; Alberto diseñó el esquema y escribió/ejecutó él mismo las migraciones versionadas con rollback sobre datos ya en producción; eligió TypeORM sobre Sequelize por su encaje con TypeScript/GraphQL."
         }
       ],
       stack: ["Node.js", "TypeScript", "NestJS", "TypeORM", "GraphQL", "Vue", "PostgreSQL"],

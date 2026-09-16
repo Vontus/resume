@@ -34,10 +34,13 @@ one-off CV tailored to a specific job application.
    correctness. Push back if his recollection is vague ("I think I did
    this somewhere") and ask for something concrete enough to defend before
    it goes on paper. Once confirmed, add it to `experience.js` (with a
-   `confirmed: "<date> — <what was verified and how>"` field on the
-   bullet, following the existing examples) — a fact worth using once is
-   worth keeping for next time. Only touch `data.js` / the public PDFs if
-   Alberto explicitly asks for that.
+   `confirmed: "<date> — <the settled facts>"` field on the bullet,
+   following the existing examples) — a fact worth using once is worth
+   keeping for next time. Record only what matters for writing a future
+   bullet (what happened, who did it, on what data); leave out the
+   back-and-forth of how the conversation got there (wrong guesses,
+   mixed-up companies, etc.) — that's session noise, not knowledge. Only
+   touch `data.js` / the public PDFs if Alberto explicitly asks for that.
 
 3. **Build the tailored PDF as a standalone script**, not by editing
    `data.js`. Follow the pattern already used for past applications (ask
