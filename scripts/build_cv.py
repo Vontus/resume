@@ -1,6 +1,10 @@
 """
 Builds EN and ES PDF resumes by reading content from index.html.
 Usage: python build_cv.py [--lang en|es]   (default: builds both)
+       python build_cv.py --private        (also builds a phone-included
+                                             variant into pdf/private/,
+                                             sourced from gitignored
+                                             private.json; never committed)
 """
 import re
 import json
@@ -12,6 +16,8 @@ from reportlab.pdfgen import canvas
 
 REPO = Path(__file__).parent.parent
 PDF_DIR = REPO / "pdf"
+PRIVATE_PDF_DIR = PDF_DIR / "private"
+PRIVATE_CONFIG = REPO / "private.json"
 
 PAGE_W, PAGE_H = A4
 MARGIN_X = 46
@@ -310,9 +316,9 @@ def draw_main(c, d, y_top):
 
 # ---------- build
 
-def build_pdf(all_data: dict, lang: str):
-    PDF_DIR.mkdir(exist_ok=True)
-    out_path = PDF_DIR / PDF_NAMES[lang]
+def build_pdf(all_data: dict, lang: str, out_dir: Path = PDF_DIR):
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / PDF_NAMES[lang]
     d = all_data[lang]
 
     cv = canvas.Canvas(str(out_path), pagesize=A4)
@@ -345,3 +351,13 @@ if __name__ == "__main__":
 
     for lang in langs_to_build:
         build_pdf(all_data, lang)
+
+    if "--private" in sys.argv:
+        if not PRIVATE_CONFIG.exists():
+            sys.exit(f"--private requested but {PRIVATE_CONFIG} does not exist")
+        private = json.loads(PRIVATE_CONFIG.read_text(encoding="utf-8"))
+        private_data = json.loads(json.dumps(all_data))  # deep copy
+        for lang in langs_to_build:
+            private_data[lang]["contact"].update(private)
+        for lang in langs_to_build:
+            build_pdf(private_data, lang, out_dir=PRIVATE_PDF_DIR)
