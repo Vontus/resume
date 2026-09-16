@@ -36,7 +36,7 @@ const DATA = {
       {
         title: "Senior Frontend Engineer",
         company: "Quadrant Travel Technologies",
-        dates: "Jun 2023 — Present · Remote",
+        dates: "Jun 2023 — Jul 2026 · Remote",
         project: "Customer-facing SaaS for travel agents and tour operators, focused on trip documentation and booking flows.",
         bullets: [
           "Started on the backoffice side before taking sole ownership of the trip documentation frontend — combined ongoing refactoring, maintenance, and feature delivery with a modernization driven by AI-assisted workflows, with no significant regressions.",
@@ -117,7 +117,7 @@ const DATA = {
       {
         title: "Desarrollador Frontend Senior",
         company: "Quadrant Travel Technologies",
-        dates: "Jun 2023 — Actualidad · Remoto",
+        dates: "Jun 2023 — Jul 2026 · Remoto",
         project: "SaaS para agentes de viajes y tour operadores, enfocado en documentación digital de los servicios contratados y flujos de reserva.",
         bullets: [
           "Trabajé en el backoffice antes de hacerme cargo en solitario del frontend de documentación digital — he combinado refactorización, mantenimiento y entrega continua de features con una modernización apoyada en IA, sin regresiones relevantes.",
