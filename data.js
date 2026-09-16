@@ -12,9 +12,9 @@ const DATA = {
     },
     profile: "Senior Frontend / Full Stack Engineer with 8 years of experience building complex web applications and SaaS platforms. Specialized in React, TypeScript and frontend architecture, focused on scalable products, AI-assisted refactors, complex integrations and cloud-edge solutions.",
     contact: {
-      website: { url: "https://vontus.github.io/resume/", label: "Online resume" },
-      email: "martinezbernaalberto@gmail.com",
-      location: "Alicante, Spain · CET",
+      website: { url: "https://vontus.dev/resume/", label: "Online resume" },
+      email: "alberto@vontus.dev",
+      location: "Torrevieja (Alicante), Spain · Remote · CET",
       github: { url: "https://github.com/vontus", label: "github.com/vontus" },
       linkedin: {
         url: "https://www.linkedin.com/in/alberto-mart%C3%ADnez-bern%C3%A1-67945a167/",
@@ -36,7 +36,7 @@ const DATA = {
       {
         title: "Senior Frontend Engineer",
         company: "Quadrant Travel Technologies",
-        dates: "Jun 2023 — Present",
+        dates: "Jun 2023 — Present · Remote",
         project: "Customer-facing SaaS for travel agents and tour operators, focused on trip documentation and booking flows.",
         bullets: [
           "Started on the backoffice side before taking sole ownership of the trip documentation frontend — combined ongoing refactoring, maintenance, and feature delivery with a modernization driven by AI-assisted workflows, with no significant regressions.",
@@ -44,13 +44,13 @@ const DATA = {
           "Introduced visual regression testing from scratch (44 Playwright/Storybook specs in Docker); grew unit tests from 9 Jest specs to 115 Vitest specs / 842 tests, reaching 88.9% line / 90.4% branch coverage.",
           "Wrote 23 internal documents — conventions, data contracts, and refactoring protocols — that serve as the repo's living documentation and permanent grounding for AI-assisted work, through the modernization and beyond."
         ],
-        stack: "React · Next.js · TypeScript · Tailwind · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
+        stack: "React · Next.js · TypeScript · Tailwind · Figma · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
         integrations: "Smartvel · Google Maps · Notion API · GrowthBook · Sentry"
       },
       {
         title: "Full Stack Engineer",
         company: "Realizon · Consultation marketplace for Bauer Media",
-        dates: "Nov 2022 — Mar 2023",
+        dates: "Nov 2022 — Mar 2023 · Remote",
         project: "Platform orchestrating dual-party telephony sessions with presence detection and per-minute billing — connecting consumers with paid advisors and metering session duration end-to-end.",
         bullets: [],
         stack: "Node.js · TypeScript · Cloudflare Workers · Cloudflare KV/DO · Jest · React · Zod · Zustand · Tailwind",
@@ -59,13 +59,13 @@ const DATA = {
       {
         title: "Full Stack Engineer",
         company: "Interacso · PROCEED for Tecnatom",
-        dates: "Mar 2020 — Nov 2022",
+        dates: "Mar 2020 — Nov 2022 · Remote",
         project: "Mission-critical digitisation platform replacing paper inspection rounds at nuclear power plants with interactive tablet forms. Tech-led a team of three.",
         bullets: [
           "Designed an offline-first architecture (Dexie + deferred sync) and a Redis-backed real-time collaboration layer that scales across backend instances — a direct response to intermittent connectivity inside nuclear plants.",
           "Built a Microsoft Word plugin that exports inspector templates to HTML with embedded inputs, bridging the client's existing authoring workflow with a digital pipeline feeding tablet form-filling and downstream analytics."
         ],
-        stack: "Node.js · Next.js · TypeScript · React · Redux · MongoDB · MSSQL",
+        stack: "Node.js · Next.js · TypeScript · React · Redux · Figma · MongoDB · MSSQL",
         integrations: ""
       },
       {
@@ -93,9 +93,9 @@ const DATA = {
     },
     profile: "Desarrollador Frontend / Full Stack senior con 8 años de experiencia construyendo aplicaciones web complejas y plataformas SaaS. Especializado en React, TypeScript y arquitectura frontend, enfocado en productos escalables, refactors asistidos por IA, integraciones complejas y soluciones cloud-edge.",
     contact: {
-      website: { url: "https://vontus.github.io/resume/", label: "Currículum online" },
-      email: "martinezbernaalberto@gmail.com",
-      location: "Alicante, España · CET",
+      website: { url: "https://vontus.dev/resume/", label: "Currículum online" },
+      email: "alberto@vontus.dev",
+      location: "Torrevieja (Alicante), España · Remoto · CET",
       github: { url: "https://github.com/vontus", label: "github.com/vontus" },
       linkedin: {
         url: "https://www.linkedin.com/in/alberto-mart%C3%ADnez-bern%C3%A1-67945a167/",
@@ -117,7 +117,7 @@ const DATA = {
       {
         title: "Desarrollador Frontend Senior",
         company: "Quadrant Travel Technologies",
-        dates: "Jun 2023 — Actualidad",
+        dates: "Jun 2023 — Actualidad · Remoto",
         project: "SaaS para agentes de viajes y tour operadores, enfocado en documentación digital de los servicios contratados y flujos de reserva.",
         bullets: [
           "Trabajé en el backoffice antes de hacerme cargo en solitario del frontend de documentación digital — he combinado refactorización, mantenimiento y entrega continua de features con una modernización apoyada en IA, sin regresiones relevantes.",
@@ -125,13 +125,13 @@ const DATA = {
           "Introduje testing de regresión visual desde cero (44 specs Playwright/Storybook en Docker); los tests unitarios pasaron de 9 specs Jest a 115 Vitest / 842 tests, con 88,9% de líneas y 90,4% de ramas.",
           "Redacté 23 documentos internos — convenciones, contratos de datos y protocolos de refactor — que sirven como documentación viva del repo y contexto permanente para trabajo asistido por IA, tanto durante la modernización como en el desarrollo continuo."
         ],
-        stack: "React · Next.js · TypeScript · Tailwind · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
+        stack: "React · Next.js · TypeScript · Tailwind · Figma · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
         integrations: "Smartvel · Google Maps · Notion API · GrowthBook · Sentry"
       },
       {
         title: "Desarrollador Full Stack",
         company: "Realizon · Marketplace de consultas para Bauer Media",
-        dates: "Nov 2022 — Mar 2023",
+        dates: "Nov 2022 — Mar 2023 · Remoto",
         project: "Plataforma que orquesta sesiones de telefonía bilateral con detección de presencia y facturación por minuto — conectando consumidores con asesores remunerados y midiendo la duración end-to-end.",
         bullets: [],
         stack: "Node.js · TypeScript · Cloudflare Workers · Cloudflare KV/DO · Jest · React · Zod · Zustand · Tailwind",
@@ -140,13 +140,13 @@ const DATA = {
       {
         title: "Desarrollador Full Stack",
         company: "Interacso · PROCEED para Tecnatom",
-        dates: "Mar 2020 — Nov 2022",
+        dates: "Mar 2020 — Nov 2022 · Remoto",
         project: "Plataforma mission-critical de digitalización que sustituye las rondas de inspección en papel en centrales nucleares por formularios interactivos en tablet. Tech lead de un equipo de tres.",
         bullets: [
           "Diseñé una arquitectura offline-first (Dexie + sincronización diferida) y una capa de colaboración en tiempo real con Redis que escala entre instancias del backend — respuesta a la conectividad intermitente en centrales nucleares.",
           "Desarrollé un plugin de Microsoft Word que exporta plantillas de inspectores a HTML con inputs embebidos, conectando el flujo de autoría del cliente con un pipeline digital que alimenta el rellenado en tablet y la analítica posterior."
         ],
-        stack: "Node.js · Next.js · TypeScript · React · Redux · MongoDB · MSSQL",
+        stack: "Node.js · Next.js · TypeScript · React · Redux · Figma · MongoDB · MSSQL",
         integrations: ""
       },
       {
