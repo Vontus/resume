@@ -36,11 +36,16 @@ const EXPERIENCE = {
         {
           text: "Wrote 23 internal documents — conventions, data contracts, and refactoring protocols — that serve as the repo's living documentation and permanent grounding for AI-assisted work, through the modernization and beyond.",
           tags: ["documentation", "ai-workflow"]
+        },
+        {
+          text: "Used TanStack Query as more than a fetching layer — invalidated queries by query key after mutations to keep data consistent, and leaned on the query cache itself as a lightweight shared-state layer across components instead of introducing a separate client-state store.",
+          tags: ["frontend", "caching", "state-management", "react-query"],
+          confirmed: "2026-09-16 — touched cache staleness config directly (exact staleTime/gcTime values not recalled); invalidated via query keys after mutations; used the query cache as a de facto shared-state layer in place of a dedicated client-state store."
         }
       ],
-      stack: ["React", "Next.js", "TypeScript", "Tailwind", "Figma", "Storybook", "Jest/Vitest", "Testing Library", "Playwright", "GitLab CI"],
+      stack: ["React", "Next.js", "TypeScript", "TanStack Query", "Tailwind", "Figma", "Storybook", "Jest/Vitest", "Testing Library", "Playwright", "GitLab CI"],
       integrations: ["Smartvel", "Google Maps", "Notion API", "GrowthBook", "Sentry"],
-      notes: "Figma used as a consumer — coordinating closely with designers on handoff, not producing designs himself."
+      notes: "Figma used as a consumer — coordinating closely with designers on handoff, not producing designs himself. TanStack (React) Query is the data-fetching layer used to call the backend (confirmed 2026-09-16)."
     },
     {
       company: "Realizon · Consultation marketplace for Bauer Media",
@@ -65,11 +70,18 @@ const EXPERIENCE = {
         },
         {
           text: "Designed an offline-first architecture (Dexie + deferred sync) and a Redis-backed real-time collaboration layer that scales across backend instances — a direct response to intermittent connectivity inside nuclear plants.",
-          tags: ["backend", "architecture", "realtime", "offline-first"]
+          tags: ["backend", "architecture", "realtime", "offline-first"],
+          confirmed: "2026-09-16 — end-to-end feature: multiple inspectors editing the same document simultaneously, possibly connected to different backend pod instances. Alberto owned the MSSQL schema, the backend architecture, and the React/Next.js frontend for this himself (design/Figma was the one piece handed to him by a designer, not owned). Redis served two roles: holding each open user session's in-memory state, and pub/sub messaging to sync state across backend instances. His manager's default suggestion for the cross-pod messaging was RabbitMQ; Alberto pushed back and used Redis instead — already running it, and its pub/sub covered what was needed without standing up a separate broker."
         },
         {
-          text: "Built a Microsoft Word plugin that exports inspector templates to HTML with embedded inputs, bridging the client's existing authoring workflow with a digital pipeline feeding tablet form-filling and downstream analytics.",
-          tags: ["integration", "tooling"]
+          text: "Added a dedicated event-log table capturing every action taken in the app, giving a full audit trail of who did what and when — an indispensable requirement for this class of project (nuclear power plant inspections).",
+          tags: ["audit", "compliance", "database", "event-log"],
+          confirmed: "2026-09-16 — a specific DB table logged every event/action in the app; this was an indispensable requirement for this type of project (regulatory compliance for nuclear plants); the specific overseeing body isn't recalled, so don't name one."
+        },
+        {
+          text: "Contributed to a Microsoft Word plugin that exports inspector templates to HTML with embedded inputs, bridging the client's existing authoring workflow with a digital pipeline feeding tablet form-filling and downstream analytics — a colleague owned and drove this tool day to day; Alberto stepped in as the developer a couple of times during that colleague's absences, gaining hands-on experience building and maintaining it.",
+          tags: ["integration", "tooling"],
+          confirmed: "2026-09-16 — a colleague was the primary/owning developer on this plugin; Alberto covered development a couple of times during that colleague's vacations, so has real hands-on build/maintenance experience but did not originate or own it end-to-end. Earlier phrasing ('Built a Microsoft Word plugin...') overstated his ownership and has been corrected."
         }
       ],
       stack: ["Node.js", "Next.js", "TypeScript", "React", "Redux", "Webpack", "Figma", "MongoDB", "MSSQL"],
@@ -90,7 +102,7 @@ const EXPERIENCE = {
       ],
       stack: ["Node.js", "TypeScript", "NestJS", "TypeORM", "GraphQL", "Vue", "PostgreSQL"],
       integrations: [],
-      notes: ""
+      notes: "A second project at LynxView (the company name field bundles the Mustang PLM project, but this was separate): a PWA for utility technicians reading water meters in a town — installable from the browser onto tablets, same core stack (NestJS, GraphQL, Vue, TypeScript, TypeORM) (confirmed 2026-09-16 — his specific role/contributions on this one not yet detailed; ask Alberto if a future application needs specifics). This LynxView stint predates Vue 3 (released Sep 2020) — the Vue experience here is Vue 2, not Vue 3/Composition API (confirmed 2026-09-17 — do not describe this as Vue 3 experience). Since moving to React professionally (Quadrant), Alberto has kept up with Vue 3 on his own time — followed its updates as a hobby, and 2 days before this note passed a technical interview covering Vue 3/Composition API (confirmed 2026-09-17). Frame as self-directed/hobby familiarity with Vue 3, distinct from — and not a substitute for — the professional Vue 2 experience above; never state or imply paid Vue 3 work."
     }
   ],
 
@@ -116,11 +128,16 @@ const EXPERIENCE = {
         {
           text: "Redacté 23 documentos internos — convenciones, contratos de datos y protocolos de refactor — que sirven como documentación viva del repo y contexto permanente para trabajo asistido por IA, tanto durante la modernización como en el desarrollo continuo.",
           tags: ["documentation", "ai-workflow"]
+        },
+        {
+          text: "Usé TanStack Query como algo más que una capa de fetching — invalidé queries por query key tras las mutaciones para mantener los datos consistentes, y usé la propia caché de queries como una capa ligera de estado compartido entre componentes en lugar de introducir un store de estado cliente aparte.",
+          tags: ["frontend", "caching", "state-management", "react-query"],
+          confirmed: "2026-09-16 — tocó configuración de caducidad de caché directamente (no recuerda los valores exactos de staleTime/gcTime); invalidaba vía query keys tras mutaciones; usaba la caché de queries como capa de estado compartido de facto en lugar de un store de estado cliente dedicado."
         }
       ],
-      stack: ["React", "Next.js", "TypeScript", "Tailwind", "Figma", "Storybook", "Jest/Vitest", "Testing Library", "Playwright", "GitLab CI"],
+      stack: ["React", "Next.js", "TypeScript", "TanStack Query", "Tailwind", "Figma", "Storybook", "Jest/Vitest", "Testing Library", "Playwright", "GitLab CI"],
       integrations: ["Smartvel", "Google Maps", "Notion API", "GrowthBook", "Sentry"],
-      notes: "Figma usado como consumidor — coordinación estrecha con diseñadores en el handoff, no produce los diseños él mismo."
+      notes: "Figma usado como consumidor — coordinación estrecha con diseñadores en el handoff, no produce los diseños él mismo. TanStack (React) Query es la capa de data-fetching usada para llamar al backend (confirmado 2026-09-16)."
     },
     {
       company: "Realizon · Marketplace de consultas para Bauer Media",
@@ -145,11 +162,18 @@ const EXPERIENCE = {
         },
         {
           text: "Diseñé una arquitectura offline-first (Dexie + sincronización diferida) y una capa de colaboración en tiempo real con Redis que escala entre instancias del backend — respuesta a la conectividad intermitente en centrales nucleares.",
-          tags: ["backend", "architecture", "realtime", "offline-first"]
+          tags: ["backend", "architecture", "realtime", "offline-first"],
+          confirmed: "2026-09-16 — feature end-to-end: varios inspectores editando el mismo documento a la vez, posiblemente conectados a distintos pods de backend. Alberto fue el dueño del esquema MSSQL, la arquitectura de backend y el frontend React/Next.js de esta funcionalidad (el diseño/Figma sí lo recibía de un diseñador, no lo producía él). Redis cumplía dos funciones: guardar el estado en memoria de cada sesión de usuario abierta, y la mensajería pub/sub para sincronizar estado entre instancias del backend. Su jefe proponía por defecto RabbitMQ para la mensajería entre pods; Alberto lo rebatió y usó Redis — ya lo tenían corriendo, y su pub/sub cubría lo necesario sin montar un broker aparte."
         },
         {
-          text: "Desarrollé un plugin de Microsoft Word que exporta plantillas de inspectores a HTML con inputs embebidos, conectando el flujo de autoría del cliente con un pipeline digital que alimenta el rellenado en tablet y la analítica posterior.",
-          tags: ["integration", "tooling"]
+          text: "Añadí una tabla de log de eventos dedicada que registraba cada acción realizada en la aplicación, dando un rastro de auditoría completo de quién hizo qué y cuándo — requisito indispensable para este tipo de proyecto (inspecciones en centrales nucleares).",
+          tags: ["audit", "compliance", "database", "event-log"],
+          confirmed: "2026-09-16 — una tabla específica en la BBDD registraba cada evento/acción de la app; era un requisito indispensable para este tipo de proyecto (cumplimiento normativo en centrales nucleares); no se recuerda el organismo concreto que lo vigilaba, así que no se debe nombrar ninguno."
+        },
+        {
+          text: "Colaboré en un plugin de Microsoft Word que exporta plantillas de inspectores a HTML con inputs embebidos, conectando el flujo de autoría del cliente con un pipeline digital que alimenta el rellenado en tablet y la analítica posterior — un compañero era el dueño de esta herramienta y la llevaba día a día; Alberto tomó el relevo como desarrollador en un par de ocasiones durante sus ausencias, ganando experiencia práctica construyéndola y manteniéndola.",
+          tags: ["integration", "tooling"],
+          confirmed: "2026-09-16 — un compañero era el desarrollador principal/dueño de este plugin; Alberto cubrió el desarrollo un par de veces durante las vacaciones de ese compañero, por lo que tiene experiencia práctica real de construcción/mantenimiento pero no lo originó ni fue el dueño end-to-end. La redacción anterior ('Desarrollé un plugin...') sobrestimaba su propiedad y ha sido corregida."
         }
       ],
       stack: ["Node.js", "Next.js", "TypeScript", "React", "Redux", "Webpack", "Figma", "MongoDB", "MSSQL"],
@@ -170,7 +194,7 @@ const EXPERIENCE = {
       ],
       stack: ["Node.js", "TypeScript", "NestJS", "TypeORM", "GraphQL", "Vue", "PostgreSQL"],
       integrations: [],
-      notes: ""
+      notes: "Hubo un segundo proyecto en LynxView (el campo de empresa agrupa el proyecto PLM de Mustang, pero este era distinto): una PWA para técnicos que toman lecturas de contadores de agua en un pueblo — instalable desde el navegador en tablets, mismo stack base (NestJS, GraphQL, Vue, TypeScript, TypeORM) (confirmado 2026-09-16 — su rol/aportación concreta en este todavía no está detallada; preguntar a Alberto si una futura aplicación necesita algo más específico). Este puesto en LynxView es anterior a Vue 3 (publicado en sep. 2020) — la experiencia con Vue aquí es Vue 2, no Vue 3/Composition API (confirmado 2026-09-17 — no describir esto como experiencia en Vue 3). Desde que pasó a trabajar profesionalmente con React (Quadrant), Alberto se ha mantenido al día con Vue 3 por su cuenta — como hobby, siguiendo sus actualizaciones, y 2 días antes de esta nota superó una entrevista técnica que cubría Vue 3/Composition API (confirmado 2026-09-17). Presentarlo como familiaridad autodidacta/hobby con Vue 3, distinta de —y no un sustituto de— la experiencia profesional en Vue 2 de arriba; nunca afirmar ni insinuar trabajo remunerado en Vue 3."
     }
   ]
 };
