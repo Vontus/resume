@@ -1,3 +1,5 @@
 .DS_Store
 private.json
 pdf/private/
+pdf/tailored/
+__pycache__/
