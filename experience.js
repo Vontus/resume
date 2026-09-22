@@ -13,6 +13,15 @@
 // scanning, not a taxonomy to match algorithmically against a job posting.
 // `notes` holds facts that haven't been phrased as a resume bullet yet.
 
+// Confirmed gaps — things Alberto has NOT worked with. Don't put them on a
+// CV, and don't re-ask unless he brings news:
+//
+//   AWS: no experience at all, professional or personal (confirmed
+//   2026-09-22). His cloud/infra experience is Cloudflare (Workers,
+//   KV/Durable Objects), Docker, GitLab CI and Redis, plus a backend
+//   deployed across several pod instances at Interacso — nothing
+//   AWS-specific (S3, Lambda, ECS/EKS, RDS, SQS, Cognito...).
+
 const EXPERIENCE = {
   en: [
     {
@@ -57,10 +66,16 @@ const EXPERIENCE = {
       dates: "Nov 2022 — Mar 2023",
       remote: true,
       project: "Platform orchestrating dual-party telephony sessions with presence detection and per-minute billing — connecting consumers with paid advisors and metering session duration end-to-end.",
-      bullets: [],
+      bullets: [
+        {
+          text: "Worked on a plain React SPA — no meta-framework — as the platform ran at the edge on Cloudflare Workers, where Next.js wasn't an option.",
+          tags: ["frontend", "react", "edge", "cloudflare-workers"],
+          confirmed: "2026-09-22 — the Realizon frontend was React with nothing on top of it (no Next.js); the reason was that the platform ran at the edge on Cloudflare Workers, which ruled Next out. This is the one place in his history with professional React-without-Next experience. His individual scope within the frontend isn't detailed (4-month stint) — the bullet deliberately says \"worked on\", not \"owned\"."
+        }
+      ],
       stack: ["Node.js", "TypeScript", "Cloudflare Workers", "Cloudflare KV/DO", "Jest", "React", "Zod", "Zustand", "Tailwind"],
       integrations: ["Twilio", "PayPal", "Sendinblue", "Cloudflare", "Datadog"],
-      notes: "Short stint (4 months). No detailed bullets recorded yet — revisit with Alberto if a specific application would benefit from something concrete here (e.g. anything about the per-minute billing/metering logic or the presence detection)."
+      notes: "Short stint (4 months). Asked again 2026-09-22 about the backend (per-minute billing/metering, presence detection, the Twilio/PayPal integrations): he does not recall the specifics. Do not invent bullets there, and do not offer him candidate phrasings to confirm — that invites suggestion rather than memory. The project line and the stack carry this entry on their own; only add a backend bullet if he later comes back with something concrete he could defend in an interview."
     },
     {
       company: "Interacso · PROCEED for Tecnatom",
@@ -159,10 +174,16 @@ const EXPERIENCE = {
       dates: "Nov 2022 — Mar 2023",
       remote: true,
       project: "Plataforma que orquesta sesiones de telefonía bilateral con detección de presencia y facturación por minuto — conectando consumidores con asesores remunerados y midiendo la duración end-to-end.",
-      bullets: [],
+      bullets: [
+        {
+          text: "Trabajé en una SPA de React sin meta-framework — la plataforma corría en el edge sobre Cloudflare Workers, donde Next.js no era una opción.",
+          tags: ["frontend", "react", "edge", "cloudflare-workers"],
+          confirmed: "2026-09-22 — el frontend de Realizon era React sin nada por encima (sin Next.js); el motivo era que la plataforma corría en el edge sobre Cloudflare Workers, lo que descartaba Next. Es el único sitio de su historial con experiencia profesional de React sin Next. Su aportación individual dentro del frontend no está detallada (puesto de 4 meses) — el bullet dice \"trabajé en\" a propósito, no \"fui dueño de\"."
+        }
+      ],
       stack: ["Node.js", "TypeScript", "Cloudflare Workers", "Cloudflare KV/DO", "Jest", "React", "Zod", "Zustand", "Tailwind"],
       integrations: ["Twilio", "PayPal", "Sendinblue", "Cloudflare", "Datadog"],
-      notes: "Puesto corto (4 meses). Sin bullets detallados todavía — revisar con Alberto si alguna aplicación concreta se beneficiaría de algo específico aquí (p. ej. la lógica de facturación por minuto o la detección de presencia)."
+      notes: "Puesto corto (4 meses). Preguntado de nuevo el 2026-09-22 por el backend (facturación por minuto, detección de presencia, integraciones con Twilio/PayPal): no recuerda los detalles. No inventar bullets ahí, y no ofrecerle redacciones candidatas para que las confirme — eso provoca sugestión en lugar de memoria. La línea de proyecto y el stack sostienen esta entrada por sí solos; añadir un bullet de backend solo si más adelante vuelve con algo concreto que pueda defender en una entrevista."
     },
     {
       company: "Interacso · PROCEED para Tecnatom",
