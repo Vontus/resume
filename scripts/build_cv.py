@@ -221,9 +221,11 @@ def draw_sidebar(c, d, y_top):
     y = section_title(c, d["sections"]["contact"], x, y, w)
     c.setFillColor(COLOR_TEXT)
     # (label, url, underline)
-    contact_items = [
-        (contact["website"]["label"], contact["website"]["url"], True),
-    ]
+    contact_items = []
+    if contact.get("website"):
+        contact_items.append(
+            (contact["website"]["label"], contact["website"]["url"], True)
+        )
     if contact.get("phone"):
         contact_items.append(
             (contact["phone"], "tel:" + contact["phone"].replace(" ", ""), False)
