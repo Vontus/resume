@@ -60,7 +60,7 @@ const EXPERIENCE = {
       bullets: [],
       stack: ["Node.js", "TypeScript", "Cloudflare Workers", "Cloudflare KV/DO", "Jest", "React", "Zod", "Zustand", "Tailwind"],
       integrations: ["Twilio", "PayPal", "Sendinblue", "Cloudflare", "Datadog"],
-      notes: "Short stint (4 months). No detailed bullets recorded yet — revisit with Alberto if a specific application would benefit from something concrete here (e.g. anything about the per-minute billing/metering logic or the presence detection)."
+      notes: "Short stint (4 months). No detailed bullets recorded yet — revisit with Alberto if a specific application would benefit from something concrete here (e.g. anything about the per-minute billing/metering logic or the presence detection). Worked 100% in English — the client was German (confirmed 2026-09-25). This is the concrete evidence behind the \"Advanced\" English level on the CV."
     },
     {
       company: "Interacso · PROCEED for Tecnatom",
@@ -112,7 +112,17 @@ const EXPERIENCE = {
       ],
       stack: ["Node.js", "TypeScript", "NestJS", "TypeORM", "GraphQL", "Vue", "PostgreSQL"],
       integrations: [],
-      notes: "A second project at LynxView (the company name field bundles the Mustang PLM project, but this was separate): a PWA for utility technicians reading water meters in a town — installable from the browser onto tablets, same core stack (NestJS, GraphQL, Vue, TypeScript, TypeORM) (confirmed 2026-09-16 — his specific role/contributions on this one not yet detailed; ask Alberto if a future application needs specifics). This LynxView stint predates Vue 3 (released Sep 2020) — the Vue experience here is Vue 2, not Vue 3/Composition API (confirmed 2026-09-17 — do not describe this as Vue 3 experience). Since moving to React professionally (Quadrant), Alberto has kept up with Vue 3 on his own time — followed its updates as a hobby, and 2 days before this note passed a technical interview covering Vue 3/Composition API (confirmed 2026-09-17). Frame as self-directed/hobby familiarity with Vue 3, distinct from — and not a substitute for — the professional Vue 2 experience above; never state or imply paid Vue 3 work."
+      notes: "A second project at LynxView (the company name field bundles the Mustang PLM project, but this was separate): a PWA for utility technicians reading water meters in a town — installable from the browser onto tablets, same core stack (NestJS, GraphQL, Vue, TypeScript, TypeORM) (confirmed 2026-09-16 — his specific role/contributions on this one not yet detailed; ask Alberto if a future application needs specifics). This LynxView stint predates Vue 3 (released Sep 2020) — the Vue experience here is Vue 2, not Vue 3/Composition API (confirmed 2026-09-17 — do not describe this as Vue 3 experience). Since moving to React professionally (Quadrant), Alberto has kept up with Vue 3 on his own time — followed its updates as a hobby, and 2 days before this note passed a technical interview covering Vue 3/Composition API (confirmed 2026-09-17). Frame as self-directed/hobby familiarity with Vue 3, distinct from — and not a substitute for — the professional Vue 2 experience above; never state or imply paid Vue 3 work. At the start of his time at LynxView he worked for Ibergest, a LynxView client whose business-management applications were built in .NET — Visual Basic (VB.NET), not C# (confirmed 2026-09-25 — the specific work he did on those apps is not yet detailed; ask before writing more than that)."
+    },
+    {
+      company: "Swiss4ward · Derma2go",
+      dates: "2018 (4-month internship, right before LynxView)",
+      remote: false,
+      project: "Derma2go: an app where anyone could request a diagnosis of a skin problem from a dermatologist for a fee. Built entirely in .NET (.NET Core, C#).",
+      bullets: [],
+      stack: ["C#", ".NET Core"],
+      integrations: [],
+      notes: "Internship from his Higher Education degree; not on the public CV (confirmed 2026-09-25). About 7 years ago as of 2026 — together with Ibergest at LynxView, this is the whole of his .NET experience. Frame it as an early foundation in C#/.NET, never as current .NET expertise. His specific contributions to Derma2go are not yet detailed; ask before writing a bullet about them. Exact months not recalled — Alberto believes internships lasted 4 months at the time."
     }
   ],
 
@@ -162,7 +172,7 @@ const EXPERIENCE = {
       bullets: [],
       stack: ["Node.js", "TypeScript", "Cloudflare Workers", "Cloudflare KV/DO", "Jest", "React", "Zod", "Zustand", "Tailwind"],
       integrations: ["Twilio", "PayPal", "Sendinblue", "Cloudflare", "Datadog"],
-      notes: "Puesto corto (4 meses). Sin bullets detallados todavía — revisar con Alberto si alguna aplicación concreta se beneficiaría de algo específico aquí (p. ej. la lógica de facturación por minuto o la detección de presencia)."
+      notes: "Puesto corto (4 meses). Sin bullets detallados todavía — revisar con Alberto si alguna aplicación concreta se beneficiaría de algo específico aquí (p. ej. la lógica de facturación por minuto o la detección de presencia). Trabajó 100% en inglés — el cliente era alemán (confirmado 2026-09-25). Es la evidencia concreta detrás del nivel de inglés \"Avanzado\" del CV."
     },
     {
       company: "Interacso · PROCEED para Tecnatom",
@@ -214,7 +224,36 @@ const EXPERIENCE = {
       ],
       stack: ["Node.js", "TypeScript", "NestJS", "TypeORM", "GraphQL", "Vue", "PostgreSQL"],
       integrations: [],
-      notes: "Hubo un segundo proyecto en LynxView (el campo de empresa agrupa el proyecto PLM de Mustang, pero este era distinto): una PWA para técnicos que toman lecturas de contadores de agua en un pueblo — instalable desde el navegador en tablets, mismo stack base (NestJS, GraphQL, Vue, TypeScript, TypeORM) (confirmado 2026-09-16 — su rol/aportación concreta en este todavía no está detallada; preguntar a Alberto si una futura aplicación necesita algo más específico). Este puesto en LynxView es anterior a Vue 3 (publicado en sep. 2020) — la experiencia con Vue aquí es Vue 2, no Vue 3/Composition API (confirmado 2026-09-17 — no describir esto como experiencia en Vue 3). Desde que pasó a trabajar profesionalmente con React (Quadrant), Alberto se ha mantenido al día con Vue 3 por su cuenta — como hobby, siguiendo sus actualizaciones, y 2 días antes de esta nota superó una entrevista técnica que cubría Vue 3/Composition API (confirmado 2026-09-17). Presentarlo como familiaridad autodidacta/hobby con Vue 3, distinta de —y no un sustituto de— la experiencia profesional en Vue 2 de arriba; nunca afirmar ni insinuar trabajo remunerado en Vue 3."
+      notes: "Hubo un segundo proyecto en LynxView (el campo de empresa agrupa el proyecto PLM de Mustang, pero este era distinto): una PWA para técnicos que toman lecturas de contadores de agua en un pueblo — instalable desde el navegador en tablets, mismo stack base (NestJS, GraphQL, Vue, TypeScript, TypeORM) (confirmado 2026-09-16 — su rol/aportación concreta en este todavía no está detallada; preguntar a Alberto si una futura aplicación necesita algo más específico). Este puesto en LynxView es anterior a Vue 3 (publicado en sep. 2020) — la experiencia con Vue aquí es Vue 2, no Vue 3/Composition API (confirmado 2026-09-17 — no describir esto como experiencia en Vue 3). Desde que pasó a trabajar profesionalmente con React (Quadrant), Alberto se ha mantenido al día con Vue 3 por su cuenta — como hobby, siguiendo sus actualizaciones, y 2 días antes de esta nota superó una entrevista técnica que cubría Vue 3/Composition API (confirmado 2026-09-17). Presentarlo como familiaridad autodidacta/hobby con Vue 3, distinta de —y no un sustituto de— la experiencia profesional en Vue 2 de arriba; nunca afirmar ni insinuar trabajo remunerado en Vue 3. Al inicio de su etapa en LynxView trabajó para Ibergest, cliente de LynxView cuyas aplicaciones de gestión estaban hechas en .NET — Visual Basic (VB.NET), no C# (confirmado 2026-09-25 — el trabajo concreto que hizo sobre esas aplicaciones no está detallado todavía; preguntar antes de escribir algo más que eso)."
+    },
+    {
+      company: "Swiss4ward · Derma2go",
+      dates: "2018 (prácticas de 4 meses, justo antes de LynxView)",
+      remote: false,
+      project: "Derma2go: app para que cualquier persona pudiera pedir a un dermatólogo, por un precio, el diagnóstico de un problema de piel. Hecha íntegramente en .NET (.NET Core, C#).",
+      bullets: [],
+      stack: ["C#", ".NET Core"],
+      integrations: [],
+      notes: "Prácticas del Grado Superior; no aparece en el CV público (confirmado 2026-09-25). Hace unos 7 años (en 2026): junto con Ibergest en LynxView, es toda su experiencia en .NET. Presentarlo como base temprana en C#/.NET, nunca como experiencia .NET actual. Su aportación concreta a Derma2go no está detallada; preguntar antes de escribir un bullet sobre ella. No recuerda los meses exactos — cree que en esa época las prácticas duraban 4 meses."
     }
+  ]
+};
+
+// Skills that are NOT backed by a specific company entry above: what can
+// and can't go on a CV. Settled with Alberto, so don't re-ask from scratch.
+const SKILL_NOTES = {
+  en: [
+    "Docker (confirmed 2026-09-25): used containers at every company he has worked at, and has written Dockerfiles himself. Lately AI writes them, so he's unsure he could hold up advanced Docker questions in an interview — list it as a stack item, don't build a bullet claiming Docker expertise.",
+    "Azure (2026-09-25): vague recollection only (\"Azure DevOps rings a bell\"), can't say where or for what. Do not put it on a CV.",
+    "Java (2026-09-25): hobby only — Minecraft Bukkit plugins (MagicBottle, github.com/Vontus/MagicBottle, still works on modern versions) and Android. No Spring. Alberto prefers not to put Minecraft plugins on a CV; keep Java off professional CVs.",
+    "Kotlin (2026-09-25): his Kotlin Android apps (moone, pellizco, LaCompra) were built 100% by AI and he hasn't touched the code — he can't defend Kotlin. Do not list Kotlin or Android development.",
+    "Angular (2026-09-25): never used. Do not list it."
+  ],
+  es: [
+    "Docker (confirmado 2026-09-25): ha usado contenedores en todas las empresas en las que ha estado y ha escrito Dockerfiles él mismo. Últimamente los escribe la IA, así que no está seguro de sostener preguntas avanzadas de Docker en una entrevista — ponerlo como tecnología del stack, no en un bullet que afirme dominio de Docker.",
+    "Azure (2026-09-25): solo un recuerdo vago (\"me suena Azure DevOps\"), sin saber dónde ni para qué. No ponerlo en un CV.",
+    "Java (2026-09-25): solo como hobby — plugins de Minecraft para Bukkit (MagicBottle, github.com/Vontus/MagicBottle, sigue funcionando en versiones modernas) y Android. Nada de Spring. Alberto prefiere no poner plugins de Minecraft en el CV; dejar Java fuera de los CV profesionales.",
+    "Kotlin (2026-09-25): sus apps Android en Kotlin (moone, pellizco, LaCompra) están hechas 100% con IA y no ha tocado el código — no puede defender Kotlin. No poner Kotlin ni desarrollo Android.",
+    "Angular (2026-09-25): no lo ha usado nunca. No ponerlo."
   ]
 };
