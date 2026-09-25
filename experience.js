@@ -116,13 +116,13 @@ const EXPERIENCE = {
     },
     {
       company: "Swiss4ward · Derma2go",
-      dates: "2018 (3-month internship, right before LynxView)",
+      dates: "2018 (internship of ~3–4 months, right before LynxView)",
       remote: false,
       project: "Derma2go: a teledermatology web platform where anyone could get a skin problem diagnosed online by a dermatologist, paying per consultation. Built entirely in C# / .NET.",
       bullets: [],
       stack: ["C#", ".NET", "ASP.NET (web)"],
       integrations: [],
-      notes: "Internship from his Higher Education degree; not on the public CV (confirmed 2026-09-25). About 7 years ago as of 2026 — together with Ibergest at LynxView, this is the whole of his .NET experience. Frame it as an early foundation in C#/.NET, never as current .NET expertise. Web app. He thinks it was ASP.NET MVC rather than .NET Core but isn't sure and can't defend framework details in an interview — write \"C# / .NET\", never \".NET Core\" or \"ASP.NET MVC\". He was the intern; it lasted 3 months. Interview anecdotes, deliberately not CV bullets (too specific, and he can't recall the technical detail of the bug): (1) right after joining he fixed a long-standing database bug that nobody on the team had managed or wanted to fix, by researching it thoroughly (searching, reading); it surprised the team. Good answer to 'tell me about a hard problem you solved' — the skill is investigating an unfamiliar system. (2) The company was Swiss; in a meeting with the CEO he spoke to him directly in English, which surprised his manager, who usually translated for colleagues (confirmed 2026-09-25)."
+      notes: "Internship from his Higher Education degree; not on the public CV (confirmed 2026-09-25). About 7 years ago as of 2026 — together with Ibergest at LynxView, this is the whole of his .NET experience. Frame it as an early foundation in C#/.NET, never as current .NET expertise. Web app. He thinks it was ASP.NET MVC rather than .NET Core but isn't sure and can't defend framework details in an interview — write \"C# / .NET\", never \".NET Core\" or \"ASP.NET MVC\". He was the intern. Duration not recalled exactly (3 or 4 months; a Higher Education FCT is typically ~400 hours, i.e. about 3 months full-time) — on a CV write just the year. Interview anecdotes, deliberately not CV bullets (too specific, and he can't recall the technical detail of the bug): (1) right after joining he fixed a long-standing database bug that nobody on the team had managed or wanted to fix, by researching it thoroughly (searching, reading); it surprised the team. Good answer to 'tell me about a hard problem you solved' — the skill is investigating an unfamiliar system. (2) The company was Swiss; in a meeting with the CEO he spoke to him directly in English, which surprised his manager, who usually translated for colleagues (confirmed 2026-09-25)."
     }
   ],
 
@@ -228,13 +228,13 @@ const EXPERIENCE = {
     },
     {
       company: "Swiss4ward · Derma2go",
-      dates: "2018 (prácticas de 3 meses, justo antes de LynxView)",
+      dates: "2018 (prácticas de ~3–4 meses, justo antes de LynxView)",
       remote: false,
       project: "Derma2go: plataforma web de teledermatología para que cualquier persona obtuviera online el diagnóstico de un dermatólogo sobre un problema de piel, con pago por consulta. Hecha íntegramente en C# / .NET.",
       bullets: [],
       stack: ["C#", ".NET", "ASP.NET (web)"],
       integrations: [],
-      notes: "Prácticas del Grado Superior; no aparece en el CV público (confirmado 2026-09-25). Hace unos 7 años (en 2026): junto con Ibergest en LynxView, es toda su experiencia en .NET. Presentarlo como base temprana en C#/.NET, nunca como experiencia .NET actual. App web. Cree que era ASP.NET MVC más que .NET Core, pero no está seguro y no podría defender detalles del framework en una entrevista — escribir \"C# / .NET\", nunca \".NET Core\" ni \"ASP.NET MVC\". Era el becario; duró 3 meses. Anécdotas para entrevista, a propósito fuera del CV (demasiado específicas, y no recuerda el detalle técnico del bug): (1) nada más entrar resolvió un bug antiguo de base de datos que nadie del equipo había sabido o querido arreglar, investigándolo a fondo (búsquedas, lectura); sorprendió al equipo. Buena respuesta a 'cuéntame un problema difícil que resolviste' — la habilidad es investigar un sistema que no conoces. (2) La empresa era suiza; en una reunión con el CEO le habló directamente en inglés, lo que sorprendió a su manager, que solía traducir a los compañeros (confirmado 2026-09-25)."
+      notes: "Prácticas del Grado Superior; no aparece en el CV público (confirmado 2026-09-25). Hace unos 7 años (en 2026): junto con Ibergest en LynxView, es toda su experiencia en .NET. Presentarlo como base temprana en C#/.NET, nunca como experiencia .NET actual. App web. Cree que era ASP.NET MVC más que .NET Core, pero no está seguro y no podría defender detalles del framework en una entrevista — escribir \"C# / .NET\", nunca \".NET Core\" ni \"ASP.NET MVC\". Era el becario. No recuerda la duración exacta (3 o 4 meses; la FCT de un Grado Superior suele rondar las 400 horas, unos 3 meses a jornada completa) — en un CV poner solo el año. Anécdotas para entrevista, a propósito fuera del CV (demasiado específicas, y no recuerda el detalle técnico del bug): (1) nada más entrar resolvió un bug antiguo de base de datos que nadie del equipo había sabido o querido arreglar, investigándolo a fondo (búsquedas, lectura); sorprendió al equipo. Buena respuesta a 'cuéntame un problema difícil que resolviste' — la habilidad es investigar un sistema que no conoces. (2) La empresa era suiza; en una reunión con el CEO le habló directamente en inglés, lo que sorprendió a su manager, que solía traducir a los compañeros (confirmado 2026-09-25)."
     }
   ]
 };
