@@ -39,8 +39,8 @@ const DATA = {
         dates: "Jun 2023 — Jul 2026 · Remote",
         project: "Customer-facing SaaS for travel agents and tour operators, focused on trip documentation and booking flows.",
         bullets: [
-          "Started on the backoffice side before taking sole ownership of the trip documentation frontend — combined ongoing refactoring, maintenance, and feature delivery with a modernization driven by AI-assisted workflows, with no significant regressions.",
-          "Moved the normalization logic out of the views into a BFF built on Next.js API routes — consolidating the two backend APIs and third-party services into a single ViewModel and flattening 18 service variants.",
+          "Took sole ownership of the trip documentation frontend — refactoring, maintenance and feature delivery alongside a modernization driven by AI-assisted workflows, on a prior visual-regression baseline.",
+          "Moved the normalization logic out of the views into a BFF built on Next.js API routes — a single public endpoint over private backend APIs, consolidating them and third-party services into one ViewModel and flattening 18 service variants.",
           "Introduced visual regression testing from scratch (44 Playwright/Storybook specs in Docker); grew unit tests from 9 Jest specs to 115 Vitest specs / 842 tests, reaching 88.9% line / 90.4% branch coverage.",
           "Wrote 23 internal documents — conventions, data contracts, and refactoring protocols — that serve as the repo's living documentation and permanent grounding for AI-assisted work, through the modernization and beyond."
         ],
@@ -120,8 +120,8 @@ const DATA = {
         dates: "Jun 2023 — Jul 2026 · Remoto",
         project: "SaaS para agentes de viajes y tour operadores, enfocado en documentación digital de los servicios contratados y flujos de reserva.",
         bullets: [
-          "Trabajé en el backoffice antes de hacerme cargo en solitario del frontend de documentación digital — he combinado refactorización, mantenimiento y entrega continua de features con una modernización apoyada en IA, sin regresiones relevantes.",
-          "Llevé la lógica de normalización de las vistas a un BFF en API routes de Next — unificando las dos APIs del backend y servicios de terceros en un único ViewModel y aplanando 18 variantes de servicio.",
+          "Me hice cargo en solitario del frontend de documentación digital — refactor, mantenimiento y entrega de features junto a una modernización apoyada en IA, sobre regresión visual previa como línea base.",
+          "Llevé la lógica de normalización de las vistas a un BFF en API routes de Next — un único endpoint público sobre APIs de backend privadas, unificándolas con servicios de terceros en un único ViewModel y aplanando 18 variantes de servicio.",
           "Introduje testing de regresión visual desde cero (44 specs Playwright/Storybook en Docker); los tests unitarios pasaron de 9 specs Jest a 115 Vitest / 842 tests, con 88,9% de líneas y 90,4% de ramas.",
           "Redacté 23 documentos internos — convenciones, contratos de datos y protocolos de refactor — que sirven como documentación viva del repo y contexto permanente para trabajo asistido por IA, tanto durante la modernización como en el desarrollo continuo."
         ],
