@@ -2,7 +2,7 @@ const DATA = {
   en: {
     ui: { language: "Language", download: "Download PDF" },
     name: "Alberto Martínez Berná",
-    role: "Senior Frontend Engineer",
+    role: "Senior Full Stack Engineer",
     sections: {
       contact: "Contact",
       profile: "Profile",
@@ -10,7 +10,7 @@ const DATA = {
       education: "Education",
       experience: "Experience"
     },
-    profile: "Senior Frontend / Full Stack Engineer with 8 years of experience building complex web applications and SaaS platforms. Specialized in React, TypeScript and frontend architecture, focused on scalable products, AI-assisted refactors, complex integrations and cloud-edge solutions.",
+    profile: "Senior Full Stack Engineer with 8 years of experience building complex web applications and SaaS platforms. React and TypeScript on the frontend; Node.js, APIs and relational schemas on the backend. Focused on scalable products, AI-assisted refactors, complex integrations and cloud-edge solutions.",
     contact: {
       website: { url: "https://vontus.dev/resume/", label: "Online resume" },
       email: "alberto@vontus.dev",
@@ -40,11 +40,11 @@ const DATA = {
         project: "Customer-facing SaaS for travel agents and tour operators, focused on trip documentation and booking flows.",
         bullets: [
           "Started on the backoffice side before taking sole ownership of the trip documentation frontend — combined ongoing refactoring, maintenance, and feature delivery with a modernization driven by AI-assisted workflows, with no significant regressions.",
-          "Pulled the normalization logic out of the views into a dedicated domain layer — consolidating two inconsistent APIs and flattening 18 service variants into a single ViewModel.",
+          "Moved the normalization logic out of the views into a BFF built on Next.js API routes — consolidating the two backend APIs and third-party services into a single ViewModel and flattening 18 service variants.",
           "Introduced visual regression testing from scratch (44 Playwright/Storybook specs in Docker); grew unit tests from 9 Jest specs to 115 Vitest specs / 842 tests, reaching 88.9% line / 90.4% branch coverage.",
           "Wrote 23 internal documents — conventions, data contracts, and refactoring protocols — that serve as the repo's living documentation and permanent grounding for AI-assisted work, through the modernization and beyond."
         ],
-        stack: "React · Next.js · TypeScript · Tailwind · Figma · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
+        stack: "React · Next.js · TypeScript · TanStack Query · Tailwind · Figma · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
         integrations: "Smartvel · Google Maps · Notion API · GrowthBook · Sentry"
       },
       {
@@ -83,7 +83,7 @@ const DATA = {
   es: {
     ui: { language: "Idioma", download: "Descargar PDF" },
     name: "Alberto Martínez Berná",
-    role: "Desarrollador Frontend Senior",
+    role: "Desarrollador Full Stack Senior",
     sections: {
       contact: "Contacto",
       profile: "Perfil",
@@ -91,7 +91,7 @@ const DATA = {
       education: "Educación",
       experience: "Experiencia"
     },
-    profile: "Desarrollador Frontend / Full Stack senior con 8 años de experiencia construyendo aplicaciones web complejas y plataformas SaaS. Especializado en React, TypeScript y arquitectura frontend, enfocado en productos escalables, refactors asistidos por IA, integraciones complejas y soluciones cloud-edge.",
+    profile: "Desarrollador Full Stack senior con 8 años de experiencia construyendo aplicaciones web complejas y plataformas SaaS. React y TypeScript en frontend; Node.js, APIs y esquemas relacionales en backend. Enfocado en productos escalables, refactors asistidos por IA, integraciones complejas y soluciones cloud-edge.",
     contact: {
       website: { url: "https://vontus.dev/resume/", label: "Currículum online" },
       email: "alberto@vontus.dev",
@@ -121,11 +121,11 @@ const DATA = {
         project: "SaaS para agentes de viajes y tour operadores, enfocado en documentación digital de los servicios contratados y flujos de reserva.",
         bullets: [
           "Trabajé en el backoffice antes de hacerme cargo en solitario del frontend de documentación digital — he combinado refactorización, mantenimiento y entrega continua de features con una modernización apoyada en IA, sin regresiones relevantes.",
-          "Extraje la lógica de normalización dispersa en las vistas a una capa de dominio centralizada — unificando dos APIs inconsistentes y aplanando 18 variantes de servicio en un único ViewModel.",
+          "Llevé la lógica de normalización de las vistas a un BFF en API routes de Next — unificando las dos APIs del backend y servicios de terceros en un único ViewModel y aplanando 18 variantes de servicio.",
           "Introduje testing de regresión visual desde cero (44 specs Playwright/Storybook en Docker); los tests unitarios pasaron de 9 specs Jest a 115 Vitest / 842 tests, con 88,9% de líneas y 90,4% de ramas.",
           "Redacté 23 documentos internos — convenciones, contratos de datos y protocolos de refactor — que sirven como documentación viva del repo y contexto permanente para trabajo asistido por IA, tanto durante la modernización como en el desarrollo continuo."
         ],
-        stack: "React · Next.js · TypeScript · Tailwind · Figma · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
+        stack: "React · Next.js · TypeScript · TanStack Query · Tailwind · Figma · Storybook · Jest/Vitest · Testing Library · Playwright · GitLab CI",
         integrations: "Smartvel · Google Maps · Notion API · GrowthBook · Sentry"
       },
       {
