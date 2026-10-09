@@ -36,7 +36,13 @@ const EXPERIENCE = {
         },
         {
           text: "Pulled the normalization logic out of the views into a dedicated domain layer — consolidating two inconsistent APIs and flattening 18 service variants into a single ViewModel.",
-          tags: ["domain-modeling", "api", "refactor"]
+          tags: ["domain-modeling", "api", "refactor"],
+          confirmed: "2026-10-09 — the dedicated layer this bullet describes lived in the Next.js BFF (API routes), i.e. server-side: the logic was moved out of the client views into it. So this is backend work, not a frontend-only refactor — earlier tailored CVs framed it as a frontend domain layer, which undersold it."
+        },
+        {
+          text: "Worked on the product's server side as a BFF in Next.js API routes, fronting the two backend APIs and third-party services (Smartvel) and curating and normalizing their data before it reached the frontend.",
+          tags: ["backend", "bff", "next", "api", "integration"],
+          confirmed: "2026-10-09 — the trip documentation product was not frontend-only: Alberto worked on Next.js API routes acting as a BFF, calling both backend APIs and external services such as Smartvel, curating/normalizing the data before serving it to the frontend. Only API routes/route handlers — NOT server actions, server-side data fetching or middleware; don't claim those. Sole ownership is confirmed for the frontend, not for the BFF, so write \"worked on\" for this one."
         },
         {
           text: "Introduced visual regression testing from scratch (44 Playwright/Storybook specs in Docker); grew unit tests from 9 Jest specs to 115 Vitest specs / 842 tests, reaching 88.9% line / 90.4% branch coverage.",
@@ -144,7 +150,13 @@ const EXPERIENCE = {
         },
         {
           text: "Extraje la lógica de normalización dispersa en las vistas a una capa de dominio centralizada — unificando dos APIs inconsistentes y aplanando 18 variantes de servicio en un único ViewModel.",
-          tags: ["domain-modeling", "api", "refactor"]
+          tags: ["domain-modeling", "api", "refactor"],
+          confirmed: "2026-10-09 — la capa que describe este bullet vivía en el BFF de Next (API routes), es decir en servidor: la lógica se sacó de las vistas de cliente hacia allí. Por tanto es trabajo de backend, no un refactor solo de frontend — los CV tailored anteriores lo presentaban como capa de dominio en frontend, lo que lo infravaloraba."
+        },
+        {
+          text: "Trabajé el lado servidor del producto como un BFF en API routes de Next, por delante de las dos APIs del backend y de servicios de terceros (Smartvel), curando y normalizando sus datos antes de que llegaran al frontend.",
+          tags: ["backend", "bff", "next", "api", "integration"],
+          confirmed: "2026-10-09 — el producto de documentación digital no era solo frontend: Alberto trabajó en API routes de Next que hacían de BFF, llamando tanto a las dos APIs del backend como a servicios externos tipo Smartvel, curando/normalizando los datos antes de servirlos al frontend. Solo API routes/route handlers — NO server actions, ni data fetching en servidor, ni middleware; no atribuirle eso. La propiedad en solitario está confirmada para el frontend, no para el BFF, así que escribir \"trabajé en\" y no \"fui dueño de\"."
         },
         {
           text: "Introduje testing de regresión visual desde cero (44 specs Playwright/Storybook en Docker); los tests unitarios pasaron de 9 specs Jest a 115 Vitest / 842 tests, con 88,9% de líneas y 90,4% de ramas.",
